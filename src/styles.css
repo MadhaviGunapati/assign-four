@@ -1,0 +1,10 @@
+
+.date{
+    text-align: center;
+    margin: 50px 20px;
+    font-size: 125%;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px gray;
+    padding: 10px;
+    border: 2px solid burlywood;
+}
