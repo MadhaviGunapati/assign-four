@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { MusicService } from "./service/music.service";
 
+//import { Pipe, PipeTransform } from "./pipe/datepipe.pipe";
+import * as moment from 'moment';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,7 +12,7 @@ import { MusicService } from "./service/music.service";
 export class AppComponent {
   title = 'assign-four';
   music: any[];
-  myDate: number = Date.now(); 
-
-
+  userInput: any = '10-10-2013';
+  today : any = new Date();
+  
 }

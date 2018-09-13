@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MusicService } from '../service/music.service';
 
+import * as moment from 'moment';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

@@ -13,9 +13,36 @@
 </nav>
 <router-outlet></router-outlet>
 <div class="date">
-    {{ myDate | date: 'dd/MM/yyyy' }}
+    {{ today }}
+</div>
+
+<div class="panel panel-info">
+      <div class="panel-heading">
+            <h3 class="panel-title">Date pipe using Moment</h3>
+      </div>
+      <div class="panel-body">
+            Check the time passed since: <input type="text" [(ngModel)]="userInput"/>
+        </div>
+</div>
+
+<div class="date">
+    {{ userInput | datepipe }}
 </div>
 
 <!--<app-signin></app-signin>
 <app-home></app-home>
+ <div class="panel-body">
+      <div class="row">
+        <div class="col-md-2">
+          Filter By:
+        </div>
+        <div class="col-md-2">
+          <input type="text" [(ngModel)]= "filterText"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-mg-6">
+          <h3>Filtered By:{{filterText}}</h3>
+        </div>
+      </div>
 -->

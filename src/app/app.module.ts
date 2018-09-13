@@ -1,12 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { SigninComponent } from './signin/signin.component';
 import { HomeComponent } from './home/home.component';
 import { MusicService } from './service/music.service';
 import { RouterModule, Routes } from '@angular/router';
-//import { DatepipePipe } from './datepipe.pipe';
+import { DatepipePipe } from './pipe/datepipe.pipe';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -19,10 +20,12 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     SigninComponent,
-    HomeComponent
+    HomeComponent,
+    DatepipePipe
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
