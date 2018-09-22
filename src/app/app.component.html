@@ -21,13 +21,25 @@
             <h3 class="panel-title">Date pipe using Moment</h3>
       </div>
       <div class="panel-body">
-            Check the time passed since: <input type="text" [(ngModel)]="userInput"/>
+            Check the time passed since: <input type="text" [(ngModel)]='userInput' />
         </div>
 </div>
 
 <div class="date">
     {{ userInput | datepipe }}
 </div>
+<!-- Assignment 6 
+<div class="container">
+    <h3>Please select the language :</h3> <select id="input" class="form-control" [(ngModel)] = 'language' required="required" >
+        <option value="en">English</option>
+        <option value="fr">French</option>
+        <option value="es">Spanish</option>
+    </select>
+</div>-->
+
+
+
+
 
 <!--<app-signin></app-signin>
 <app-home></app-home>
